@@ -23,10 +23,11 @@ urlpatterns = [
     url(r'^$', rolelist),
     url(r'^(?P<RoleInfo_id>\d+)/$', detaillist),
 #(\d+)/
-    url(r'^(\d+)/addinfo$', addinfo),
-    url(r'^(\d+)/postTest2/$', postTest2),
+    url(r'^(\d+)/addinfo/$', addinfo),
+    url(r'^(\d+)/addinfo/postTest2/$', postTest2),
     url(r'^(\d+)/delinfo/$', delinfo),
     url(r'^(\d+)/editinfo/$', editinfo),
+    url(r'^(\d+)/editinfo/editinfo/$', detaillist),
 
 
 

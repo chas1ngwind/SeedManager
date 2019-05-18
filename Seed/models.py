@@ -11,6 +11,7 @@ class RoleInfo(models.Model):
         return self.role
 
 class DetailInfo(models.Model):
+    id = models.IntegerField(primary_key = True)
     amount = models.IntegerField(null=True)
     type = models.CharField(max_length=10)
     generation = models.CharField(max_length=10)
